@@ -89,7 +89,6 @@ class TicTacToe
   end
 
   def full?
-    # !(@board.include? == "" || @board.include? == " ")
     @board.all? { |board_occupied| board_occupied != " " }
   end
 
@@ -121,7 +120,7 @@ class TicTacToe
     end
 
     if won?
-      puts "Congratulation #{winner}!"
+      puts "Congratulations #{winner}!"
     elsif draw?
       puts "Cat's Game!"
     end
