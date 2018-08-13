@@ -89,7 +89,8 @@ class TicTacToe
   end
 
   def full?
-    !(@board.include? == "" || @board.include? == " ")
+    # !(@board.include? == "" || @board.include? == " ")
+    @board.all? { |board_occupied| board_occupied != " " }
   end
 
   def draw?
